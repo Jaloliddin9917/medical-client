@@ -9,10 +9,37 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "8.29.0",
-    "eslint-config-next": "13.0.6",
+    "@hookform/error-message": "^2.0.0",
+    "@hookform/resolvers": "^2.9.3",
+    "@react-pdf-viewer/core": "2.5.0",
+    "@react-pdf-viewer/default-layout": "2.5.0",
+    "axios": "^0.27.2",
+    "classnames": "^2.3.1",
+    "html-react-parser": "^2.0.0",
+    "i18next": "^21.8.3",
     "next": "13.0.6",
+    "next-i18next": "^11.0.0",
+    "pdfjs-dist": "2.6.347",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.33.0",
+    "react-html-parser": "^2.0.2",
+    "react-input-mask": "^2.0.4",
+    "react-pdf": "^5.7.2",
+    "react-query": "^3.39.1",
+    "react-simple-image-viewer": "^1.2.2",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^9.0.5",
+    "slick-carousel": "^1.8.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "8.15.0",
+    "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "i18next-scanner": "^3.1.0",
+    "plop": "^3.1.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.51.0"
   }
 }

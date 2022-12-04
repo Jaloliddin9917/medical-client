@@ -1,0 +1,26 @@
+{
+  "navbar": [
+    { "title": "Biz haqimizda", "href": "/about" },
+    { "title": "Amaliyot turlari", "href": "/surgerytype" },
+    { "title": "Yangiliklar", "href": "/news" },
+    { "title": "A'zo bo'lish", "href": "/apply" },
+    { "title": "Blog", "href": "/faq" }
+  ],
+  "about-info": [
+    { "title": "Bariatrik assotsiatsiyasi", "href": "/about" },
+    { "title": "Ta'sischilar", "href": "/founders" },
+    { "title": "Bizning kasalxonamiz", "href": "/ourhospital" }
+  ],
+  "admission-info": [
+    { "title": "Mini gastric bypass", "href": "/" },
+    { "title": "Roux-en-Y gastric bypass", "href": "/" },
+    { "title": "SLEEVE GASTRECTOMY", "href": "/" },
+    { "title": "Intra Gastric Balloon", "href": "/" }
+  ],
+  "information-info": [
+    { "title": "A'zolik", "href": "/apply" },
+    { "title": "Yangiliklar", "href": "/news" },
+    { "title": "Bizga qo'shiling", "href": "/apply" },
+    { "title": "Blog", "href": "/faq" }
+  ]
+}
