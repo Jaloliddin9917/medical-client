@@ -27,7 +27,7 @@ const Navbar = () => {
       <nav className={classes.navbar}>
         <div className={classes.logo}>
           <Link href="/">
-            <Image src={LogoWhite} alt="" width="200" height="100" />
+            <Image src={"https://moleac.com/v3/wp-content/uploads/2022/03/Moleac-inverted-logo.png"} alt="" width="200" height="100" />
           </Link>
         </div>
         <input id={classes["menu"]} type="checkbox" checked={open} />

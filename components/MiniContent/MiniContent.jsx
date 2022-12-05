@@ -3,7 +3,7 @@ import classes from "./miniBox.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-import Medicen from "../../public/media/images/box1.png"
+
 
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <div className={classes.container}>
             <div className={classes.left}>
-                <Image src={Medicen} alt="" width="500" height="400" />
+                <Image src={"https://moleac.com/v3/wp-content/uploads/2022/10/Cognivaid-stacked-boxes-2-min.png"} alt="" width="500" height="400" />
             </div>
             <div className={classes.right}>
                 <h1 className={classes.title}>NEW PRODUCT: COGNIVAID™</h1>

@@ -1,0 +1,29 @@
+@import "./../../styles/imports.scss";
+
+.video_container {
+   height: 100vh;
+    .right {
+        position: absolute;
+        bottom: -300px;
+        left: 150px;
+
+        .video_title {
+            color: $LightGray;
+        }
+
+        .video_button {
+            background: transparent;
+            width: 260px;
+            height: 45px;
+            border-color: $LightGray;
+            color: $LightGray;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .video_button:hover {
+            background: black;
+            border-color: black;
+        }
+    }
+}

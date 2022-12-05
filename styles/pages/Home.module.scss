@@ -3,10 +3,12 @@
 .home {
   background-color: #fff;
 
-  &__partners {
+  &__mini-content {
     background-color: $DarkGray;
-    // padding: 2rem 1rem;
-    // margin-top: 50px;
+  }
+
+  &__video-content {
+    height: 765px;
   }
 }
 

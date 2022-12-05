@@ -1,0 +1,10 @@
+@import "./../../styles/imports.scss";
+
+.anima_container {
+    height: 90vh;
+    display: flex;
+    
+    .left {
+        background: black;
+    }
+}

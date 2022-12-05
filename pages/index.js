@@ -2,8 +2,9 @@ import Head from "next/head";
 // import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import classes from "../styles/pages/Home.module.scss";
-import MiniContent from "../components/Mini-Content";
+import MiniContent from "../components/MiniContent";
 import VideoContent from "../components/VideoContent";
+import AnimationContent from "../components/AnimationContent";
 
 
 export default function Home() {
@@ -15,11 +16,17 @@ export default function Home() {
         <meta name="description" content="Association of Bariatric and Metabolic Surgeons of Uzbekistan" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={classes["home__partners"]}>
+      <div className={classes["home__mini-content"]}>
           <MiniContent/>
       </div>
+      <div className={classes["home__video-content"]}>
+        <VideoContent />
+      </div>
+      <div >
+        <AnimationContent />
+      </div>
 
-      <VideoContent/>
+      
     </div>
   );
 }
