@@ -3,8 +3,58 @@
 .anima_container {
     height: 90vh;
     display: flex;
-    
+    box-sizing: border-box;
+    position: relative;
+
     .left {
-        background: black;
+
+        .circle_yellow {
+            height: 500px;
+            width: 500px;
+            background: #f6831d;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 50px;
+            left: 80px;
+        }
+
+        .human {
+            position: absolute;
+            bottom: 25px;
+            left: 50px;
+            object-fit: cover;
+            // transform: scale(1.2);
+        }
+
+    }
+
+    .right {
+        padding: 50px;
+        box-sizing: border-box;
+
+        &_title {
+            color: $PrimaryRed;
+            margin-top: -10px;
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        &_desc {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 30px;
+        }
+
+        &_descBlue {
+            color: #19388a;
+            font-size: 35px;
+            margin-top: 20px;
+        }
+
+        &_descBottom {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 30px;
+        }
     }
 }

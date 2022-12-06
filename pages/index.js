@@ -5,6 +5,7 @@ import classes from "../styles/pages/Home.module.scss";
 import MiniContent from "../components/MiniContent";
 import VideoContent from "../components/VideoContent";
 import AnimationContent from "../components/AnimationContent";
+import ParallaxContent from "../components/ParallaxContent";
 
 
 export default function Home() {
@@ -24,6 +25,9 @@ export default function Home() {
       </div>
       <div >
         <AnimationContent />
+      </div>
+      <div >
+        <ParallaxContent />
       </div>
 
       
