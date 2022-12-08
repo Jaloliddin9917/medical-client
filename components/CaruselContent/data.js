@@ -1,13 +1,24 @@
 export const data = {
     mainSlider: [
         {
-            img: "/media/images/konf.png",
-            title: "",
-            text: "",
-            link: {
-                title: "Регистрация",
-                href: "https://forms.gle/WwYBhUiSaTTPGqPQ8",
-            },
+            img: "/media/images/slider_1.png",
+            title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, repudiandae.",
+            text: "   Lorem ipsum dolor sit."
+        },
+        {
+            img: "/media/images/slider_2.png",
+            title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, repudiandae.",
+            text: "   Lorem ipsum dolor sit.",
+        },
+        {
+            img: "/media/images/slider_3.png",
+            title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, repudiandae.",
+            text: "   Lorem ipsum dolor sit.",
+        },
+        {
+            img: "/media/images/slider_4.png",
+            title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, repudiandae.",
+            text: "   Lorem ipsum dolor sit.",
         },
     ],
     programs: [
