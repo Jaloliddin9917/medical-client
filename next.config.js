@@ -5,7 +5,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'moleac.com',
+        hostname: 'neuroaid.com',
       },
     ],
   },

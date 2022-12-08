@@ -1,10 +1,8 @@
 {
   "navbar": [
-    { "title": "Biz haqimizda", "href": "/about" },
-    { "title": "Amaliyot turlari", "href": "/surgerytype" },
-    { "title": "Yangiliklar", "href": "/news" },
-    { "title": "A'zo bo'lish", "href": "/apply" },
-    { "title": "Blog", "href": "/faq" }
+    { "title": "Home", "href": "/home" },
+    { "title": "About NeuroAiD™II", "href": "/about" },
+    { "title": "Order NeuroAiD™II", "href": "/order" }
   ],
   "about-info": [
     { "title": "Bariatrik assotsiatsiyasi", "href": "/about" },

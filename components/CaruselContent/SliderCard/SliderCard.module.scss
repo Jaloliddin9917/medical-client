@@ -1,0 +1,47 @@
+@import "../../../styles/imports.scss";
+
+.slider__text {
+  position: absolute;
+  bottom: 30%;
+  transform: translateY(-50%);
+  width: 40%;
+  right: 5%;
+  text-align: end;
+  color: white;
+  z-index: 2;
+  font-family: "Cormorant", serif;
+
+  h1 {
+    font-size: 3rem;
+    padding: 1rem 0;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  a {
+    background-color:$PrimaryBlue;
+    padding: 1.2rem 1.7rem;
+    display: inline-block;
+    border-radius: 22px;
+    text-transform: uppercase;
+    color:  $LightGray;
+    font-weight: 700;
+    font-family: serif;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .slider__text {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .slider__text {
+    width: 100%;
+    text-align: center;
+    right: 0;
+  }
+}

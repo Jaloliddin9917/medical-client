@@ -2,10 +2,8 @@ import Head from "next/head";
 // import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import classes from "../styles/pages/Home.module.scss";
-import MiniContent from "../components/MiniContent";
-import VideoContent from "../components/VideoContent";
-import AnimationContent from "../components/AnimationContent";
-import ParallaxContent from "../components/ParallaxContent";
+import CaruselContent from "../components/CaruselContent";
+
 
 
 export default function Home() {
@@ -18,19 +16,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={classes["home__mini-content"]}>
-          <MiniContent/>
+          <CaruselContent/>
       </div>
-      <div className={classes["home__video-content"]}>
-        <VideoContent />
-      </div>
-      <div >
-        <AnimationContent />
-      </div>
-      <div >
-        <ParallaxContent />
-      </div>
-
-      
+    
     </div>
   );
 }

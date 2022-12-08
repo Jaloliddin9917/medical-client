@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Navbar.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import LogoWhite from "../../../../public/media/icons/logo-social.png";
+import LogoWhite from "../../../../public/media/images/Logo.png";
 import Menu from "../../../../public/media/icons/menu.svg";
 import Eng from "../../../../public/media/icons/eng.svg";
 import Rus from "../../../../public/media/icons/ru.svg";
@@ -27,7 +27,7 @@ const Navbar = () => {
       <nav className={classes.navbar}>
         <div className={classes.logo}>
           <Link href="/">
-            <Image src={"https://moleac.com/v3/wp-content/uploads/2022/03/Moleac-inverted-logo.png"} alt="" width="200" height="100" />
+            <Image src={LogoWhite} alt="" width="193" height="66" />
           </Link>
         </div>
         <input id={classes["menu"]} type="checkbox" checked={open} />
