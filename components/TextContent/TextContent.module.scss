@@ -1,0 +1,21 @@
+@import "../../styles/imports.scss";
+
+
+.textContainer {
+
+    &__title {
+        color: $PrimaryBlue;
+        text-align: center;
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 50px;
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    &__main {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+}
+

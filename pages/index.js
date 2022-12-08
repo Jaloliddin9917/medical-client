@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import classes from "../styles/pages/Home.module.scss";
 import CaruselContent from "../components/CaruselContent";
+import TextContent from "../components/TextContent";
 
 
 
@@ -17,6 +18,10 @@ export default function Home() {
       </Head>
       <div className={classes["home__mini-content"]}>
           <CaruselContent/>
+      </div>
+
+      <div>
+        <TextContent/>
       </div>
     
     </div>
