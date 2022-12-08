@@ -11,16 +11,18 @@ const TextContent = () => {
         cognitive functions.
       </h1>
       <div className={classes.textContainer__main}>
-        <div className={classes.textContainer__left}>
-          NeuroAiD™II was historically a Traditional Chinese Medicine and is
+        <div className={classes.main__left}>
+          <span>NeuroAiD™II</span> was historically a Traditional Chinese Medicine and is
           listed in Singapore since 2006 as a Chinese Proprietary Medicine and
-          is indicated to support neurological functions. NeuroAiD™II is
+          is indicated to support neurological functions.
+          <br /><br />
+          <span>NeuroAiD™II</span> is
           manufactured following the international standards of Good
           Manufacturing Practices and has a well-established quality profile.
-          Each batch of NeuroAiD™II is subjected to stringent quality control
+          Each batch of <span>NeuroAiD™II</span> is subjected to stringent quality control
           and ensuring the safety and quality of the product.
         </div>
-        <div className={classes.textContainer__right}>
+        <div className={classes.main__right}>
           <Image
             src="https://neuroaid.com.sg/main/wp-content/uploads/neuroaidII_2-1-2048x1365.jpg"
             alt=""

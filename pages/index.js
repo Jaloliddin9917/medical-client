@@ -4,6 +4,7 @@ import { useTranslation } from "next-i18next";
 import classes from "../styles/pages/Home.module.scss";
 import CaruselContent from "../components/CaruselContent";
 import TextContent from "../components/TextContent";
+import BGTextContent from "../components/BGTextContent";
 
 
 
@@ -17,13 +18,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={classes["home__mini-content"]}>
-          <CaruselContent/>
+        <CaruselContent />
+        <TextContent />
       </div>
 
+
       <div>
-        <TextContent/>
+        <BGTextContent className={classes["home__text-content"]} />
       </div>
-    
+
     </div>
   );
 }

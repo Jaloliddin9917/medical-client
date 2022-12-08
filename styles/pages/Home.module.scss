@@ -4,12 +4,15 @@
   background-color: #fff;
 
   &__mini-content {
-    background-color: $DarkGray;
+    padding-top: 90px;
+    height: 140vh;
   }
 
-  &__video-content {
-    height: 765px;
+  &__text-content {
+    height: 60vh;
   }
+
+
 }
 
 @media (max-width: 700px) {
