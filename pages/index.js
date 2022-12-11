@@ -1,10 +1,13 @@
 import Head from "next/head";
-// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import classes from "../styles/pages/Home.module.scss";
 import CaruselContent from "../components/CaruselContent";
 import TextContent from "../components/TextContent";
 import BGTextContent from "../components/BGTextContent";
+import ImgTextContent from "../components/ImgTextContent";
+import BGTextContent2 from "../components/BGTextContent2";
+import BGBlueContent from "../components/BGBlueContent";
 
 
 
@@ -13,30 +16,40 @@ export default function Home() {
   return (
     <div className={classes["home"]}>
       <Head>
-        <title>{t("Bariatric Surgery")}</title>
+        <title>{t("Medicin market")}</title>
         <meta name="description" content="Association of Bariatric and Metabolic Surgeons of Uzbekistan" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div className={classes["home__mini-content"]}>
         <CaruselContent />
         <TextContent />
       </div>
 
-
-      <div>
-        <BGTextContent className={classes["home__text-content"]} />
+{/* 
+      <div className={classes["home__text-content"]}>
+        <BGTextContent  />
       </div>
+
+      <div className={classes["home__img-content"]}>
+        <ImgTextContent />
+      </div>
+
+    
+        <BGTextContent2 />
+        <BGBlueContent /> */}
+   
 
     </div>
   );
 }
 
-// export const getServerSideProps = async (context) => {
-//   const locale = context.locale;
+export const getServerSideProps = async (context) => {
+  const locale = context.locale;
 
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale, ["common"])),
-//     },
-//   };
-// };
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+};
