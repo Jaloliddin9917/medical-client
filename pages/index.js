@@ -9,37 +9,31 @@ import ImgTextContent from "../components/ImgTextContent";
 import BGTextContent2 from "../components/BGTextContent2";
 import BGBlueContent from "../components/BGBlueContent";
 
-
-
 export default function Home() {
   const { t } = useTranslation();
   return (
     <div className={classes["home"]}>
       <Head>
         <title>{t("Medicin market")}</title>
-        <meta name="description" content="Association of Bariatric and Metabolic Surgeons of Uzbekistan" />
+        <meta
+          name="description"
+          content="Association of Bariatric and Metabolic Surgeons of Uzbekistan"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className={classes["home__carusel"]}>
+      <CaruselContent />
+      </div>
       <div className={classes["home__mini-content"]}>
-        <CaruselContent />
+       
         <TextContent />
-      </div>
-
-{/* 
-      <div className={classes["home__text-content"]}>
-        <BGTextContent  />
-      </div>
-
-      <div className={classes["home__img-content"]}>
+        <BGTextContent />
         <ImgTextContent />
-      </div>
-
-    
         <BGTextContent2 />
-        <BGBlueContent /> */}
-   
-
+  
+      </div>
+      <BGBlueContent />
     </div>
   );
 }

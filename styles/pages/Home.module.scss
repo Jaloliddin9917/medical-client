@@ -3,15 +3,17 @@
 .home {
   background-color: #fff;
 
-  &__mini-content {
+  &__carusel {
     padding-top: 90px;
-    height: 140vh;
   }
 
-  &__img-content {
-    padding-left: 100px;
-    padding-right: 100px;
+  &__mini-content {
+
+    width: 1250px;
+    margin: 0 auto;
   }
+
+  
 
 
 }

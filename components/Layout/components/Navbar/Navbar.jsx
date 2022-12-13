@@ -65,15 +65,6 @@ const Navbar = () => {
             </div>
             <div className={classes.icons}>
               <Image
-                onClick={() => handleChangeLocale("en")}
-                width="100%"
-                height="100%"
-                src={Eng}
-                alt="eng"
-              />
-            </div>
-            <div className={classes.icons}>
-              <Image
                 onClick={() => handleChangeLocale("ru")}
                 width="100%"
                 height="100%"

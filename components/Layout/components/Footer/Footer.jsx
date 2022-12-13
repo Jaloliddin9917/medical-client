@@ -49,16 +49,7 @@ const Footer = () => {
           title="about"
           links={data["about-info"]}
         />
-        <FooterInfo
-          className={classes["footer__item"]}
-          title="Surgery"
-          links={data["admission-info"]}
-        />
-        <FooterInfo
-          className={classes["footer__item"]}
-          title="information"
-          links={data["information-info"]}
-        />
+       
       </div>
       <div className={classes.footer__bottom}>
         <a href="#">

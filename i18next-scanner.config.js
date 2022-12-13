@@ -19,9 +19,9 @@ module.exports = {
     },
     trans: false,
     sort: true,
-    lngs: ["uz", "ru", "en"],
+    lngs: ["uz", "ru"],
     ns: ["common"],
-    defaultLng: "uz",
+    defaultLng: "en",
     defaultNs: "common",
     removeUnusedKeys: true,
     defaultValue: function (_, __, key) {
