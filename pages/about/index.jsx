@@ -1,11 +1,13 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import BGBlueContent from "../../components/BGBlueContent";
+import BGBlueContent from "../../components/About-page/AboutBlueContent";
+
 import TextContent from "../../components/About-page/AboutTextContent/TextContent";
 import classes from "../../styles/pages/About.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import ImgTextContent from "../../components/About-page/AboutImgTextContent/ImgTextContent";
 
 const About = () => {
   const { t } = useTranslation();
@@ -28,6 +30,7 @@ const About = () => {
 
       <div className={classes["about__container__footer"]}>
         <BGBlueContent />
+        <ImgTextContent/>
       </div>
     </div>
   );
