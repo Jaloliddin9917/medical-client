@@ -1,0 +1,35 @@
+@import "../../../styles/imports.scss";
+
+
+.aboutTextImgContainer {
+     background: $White;
+     height: 100vh;
+    &_wrapper{
+        width: 1250px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+        &_title {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: $PrimaryBlue;
+            font-weight: 900;
+        }
+    
+        &_main {
+            display: flex;
+    
+            &_right {
+                font-size: 20px;
+                font-weight: normal;
+                margin-top: 20px;
+            }
+            &_left {
+                margin-top: 20px;
+                margin-right: 190px;
+            }
+        }
+    
+  
+}

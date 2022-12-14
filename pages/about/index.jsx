@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import ImgTextContent from "../../components/About-page/AboutImgTextContent/ImgTextContent";
+import TextImgContent from "../../components/About-page/AboutTextImgContent";
 
 const About = () => {
   const { t } = useTranslation();
@@ -23,14 +24,16 @@ const About = () => {
       </Head>
 
       <div className={classes["about__container"]}>
-   
-   
         <TextContent/>
       </div>
 
       <div className={classes["about__container__footer"]}>
         <BGBlueContent />
         <ImgTextContent/>
+      </div>
+
+      <div>
+        <TextImgContent/>
       </div>
     </div>
   );
