@@ -2,13 +2,14 @@
 
 
 .textContainer {
+    padding-top: 50px;
     box-sizing: border-box;
+
     &__title {
         color: $PrimaryBlue;
         text-align: center;
         width: 900px;
         margin: 0 auto;
-        margin-top: 50px;
         font-size: 35px;
         font-weight: 900;
     }
@@ -16,17 +17,145 @@
     &__main {
         display: grid;
         grid-template-columns: 70% 30%;
-        
+
 
         .main__left {
             font-size: 20px;
             margin-top: 50px;
-            span{
+
+            .main__left_first {
+                margin-bottom: 25px;
+
+            }
+
+            span {
                 font-weight: 700;
             }
 
         }
+
+
     }
 
 
+}
+
+@media (max-width: 900px) {
+    .textContainer {
+        padding-top: 150px;
+    }
+
+    .textContainer__title {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .textContainer__main {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .main__left {
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 35px;
+    }
+
+    .main__right {
+        margin: 0 auto;
+
+    }
+
+    .main__left_first {
+
+        font-size: 30px;
+    }
+
+    .main__left_second {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .textContainer {
+        padding-top: 150px;
+    }
+
+    .textContainer__main {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .main__left {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .main__right {
+        margin: 0 auto;
+        height: 500px;
+        height: 500px;
+
+        &_img {
+            min-width: 1500px !important;
+            min-height: 1566px !important;
+        }
+    }
+
+
+
+    .main__left_first {
+        margin-bottom: 40px;
+        font-size: 37px;
+    }
+
+    .main__left_second {
+        font-size: 37px;
+    }
+
+    .textContainer__title {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .textContainer {
+        padding-top: 150px;
+    }
+
+    .textContainer__main {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .main__left {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .main__left_first {
+        margin-bottom: 40px;
+        font-size: 67px;
+    }
+
+    .main__left_second {
+        font-size: 67px;
+    }
+
+    .textContainer__title {
+        width: 100%;
+        font-size: 60px;
+    }
+
+    .main__right_img {
+       
+    }
+
+    .main__right {
+        margin: 0 auto;
+    
+    }
 }

@@ -10,10 +10,13 @@ const BGTextContent = () => {
       <div className={classes.bgTextContainer_title}>
         {t("Key facts on")} NeuroAiD™II
       </div>
-      <p><span>&#10004;</span>{t("Recommended for patients in rehabilitation to support their program for improving daily functional independence.")}</p>
-      <p><span>&#10004;</span>{t("Supports motor and cognitive functions to improve quality of life.")}</p>
-      <p><span>&#10004;</span>{t("Scientifically researched.")}</p>
-      <p><span>&#10004;</span>{t("Registered and sold in 35 countries worldwide.")}</p>
+      <dir className={classes.bgTextContainer_desc}>
+        <div><i>&#10004;</i><span>{t("Oral formula in capsule form made of 9 natural herbal ingredients.")}</span></div>
+        <div><i>&#10004;</i><span>{t("Recommended for patients in rehabilitation to support their program for improving daily functional independence.")}</span></div>
+        <div><i>&#10004;</i><span>{t("Supports motor and cognitive functions to improve quality of life.")}</span></div>
+        <div><i>&#10004;</i><span>{t("Scientifically researched.")}</span></div>
+        <div><i>&#10004;</i><span>{t("Registered and sold in 35 countries worldwide.")}</span></div>
+      </dir>
     </div>
   );
 };

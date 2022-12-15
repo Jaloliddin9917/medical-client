@@ -2,10 +2,10 @@ import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import classes from "./Apply.module.scss";
 import { useTranslation } from "next-i18next";
-import { Label } from "../../components/FormGenerator";
-import InputText from "../../components/InputText";
-import InputTextArea from "../../components/InputTextArea";
-import InputMaska from "../../components/InputMask/InputMask";
+import { Label } from "../../components/Order-page/FormGenerator";
+import InputText from "../../components/Order-page/InputText";
+import InputTextArea from "../../components/Order-page/InputTextArea";
+import InputMaska from "../../components/Order-page/InputMask";
 import { useForm, Controller } from "react-hook-form";
 import { SendMessage } from "../../lib";
 import { ToastContainer, toast } from "react-toastify";
@@ -52,7 +52,7 @@ const Order = () => {
                 className={classes.item_input}
                 required
                 labelPosition="top"
-                label={t("Forename")}
+                label={t("Ism")}
               >
                 <Controller
                   className={classes.item}
