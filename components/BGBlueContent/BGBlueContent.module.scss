@@ -5,13 +5,15 @@
     width: 100%;
     height: 240px;
     background: $PrimaryBlue;
-    padding-top: 40px;
+    padding-top: 30px;
+    margin: 0 auto;
 
-    &_title {
+    &_titles {
         font-size: 30px;
         font-weight: bold;
         text-align: center;
         color: $White;
+        margin-bottom: 10px;
     }
 
     &_desc {
@@ -22,15 +24,19 @@
         margin: 0 auto;
     }
 
-    &_button {
+    &_btWrapper {
+        display: flex;
+        justify-content: center;
         margin-top: 25px;
+    }
+
+    &_button {
         height: 60px;
         width: 215px;
         background: #f6653c;
         color: $White;
         border: none;
         border-radius: 8px;
-        align-items: center;
     }
 
 }

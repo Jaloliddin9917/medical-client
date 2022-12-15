@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import BGBlueContent from "../../components/About-page/AboutBlueContent";
+import BGBlueContentHome from "../../components/BGBlueContent";
 
 import TextContent from "../../components/About-page/AboutTextContent/TextContent";
 import classes from "../../styles/pages/About.module.scss";
@@ -34,6 +35,10 @@ const About = () => {
 
       <div>
         <TextImgContent/>
+      </div>
+
+      <div>
+        <BGBlueContentHome />
       </div>
     </div>
   );

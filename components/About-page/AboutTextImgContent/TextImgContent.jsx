@@ -13,11 +13,11 @@ const TextImgContent = () => {
         </h1>
         <div className={classes.aboutTextImgContainer_main}>
           <div className={classes.aboutTextImgContainer_main_left}>
-            {t("The NEUROLOGICAL FUNCTIONS correspond to motor and cognitive functions mediated by the brain and nerves.")}
+            {t("Pharmacology and pre-clinical studies (made on cells cultures and animal models) have been conducted to identify the mechanisms of action of NeuroAiD™II, confirming the multimodal approach of the product.")}
             <br /><br />
-            {t("These functions are essential for daily activities such as moving, thinking, speaking and interacting socially.")}
+            {t("Research has been conducted with involvement of international experts. Findings have been published in specialized journals and released in international conferences over the years.")}
             <br /><br />
-            {t("Depending on the conditions of nerves and brain, rehabilitation is essential to regain and improve abilities.")}
+            {t("Over 45 scientific papers have been published and the research remains very active with ongoing trials to further assess the properties of NeuroAiD’s family products.")}
           </div>
           <div className={classes.aboutTextImgContainer_main_right}>
             <Image src={"https://neuroaid.com.sg/main/wp-content/uploads/2015/06/clinical-trials-1-e1509508390889.png"} alt="" width="195" height="400" />

@@ -3,7 +3,7 @@
 
 .aboutTextImgContainer {
      background: $White;
-     height: 100vh;
+     height: 90vh;
     &_wrapper{
         width: 1250px;
         margin: 0 auto;
@@ -21,13 +21,15 @@
             display: flex;
     
             &_right {
-                font-size: 20px;
+               
                 font-weight: normal;
                 margin-top: 20px;
             }
             &_left {
                 margin-top: 20px;
                 margin-right: 190px;
+                width: 770px;
+                font-size: 20px;
             }
         }
     
