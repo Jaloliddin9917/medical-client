@@ -23,17 +23,17 @@ export default function Home() {
       </Head>
 
       <div className={classes["home__carusel"]}>
-         <CaruselContent />
+        <CaruselContent />
       </div>
       <div className={classes["home__mini-content"]}>
-       
         <TextContent />
         <BGTextContent />
-        {/* <ImgTextContent /> */}
-        {/* <BGTextContent2 />  */}
-  
+        <ImgTextContent />
+        <BGTextContent2 />
       </div>
-      {/* <BGBlueContent /> */}
+      <div className={classes["home__blue"]}>
+        <BGBlueContent />
+      </div>
     </div>
   );
 }

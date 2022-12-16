@@ -92,17 +92,10 @@
         padding-right: 100px;
     }
 
-    .main__right {
-        margin: 0 auto;
-        height: 500px;
-        height: 500px;
-
-        &_img {
-            min-width: 1500px !important;
-            min-height: 1566px !important;
-        }
-    }
-
+    .main__right_img {
+        width: 1200px;
+        height: 800px;
+     }
 
 
     .main__left_first {
@@ -137,7 +130,7 @@
     }
 
     .main__left_first {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         font-size: 67px;
     }
 
@@ -151,7 +144,8 @@
     }
 
     .main__right_img {
-       
+       width: 1200px;
+       height: 800px;
     }
 
     .main__right {

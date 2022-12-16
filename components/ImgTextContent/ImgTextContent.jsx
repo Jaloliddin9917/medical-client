@@ -13,7 +13,7 @@ const ImgTextContent = () => {
       </h1>
       <div className={classes.imgTextContainer_main}>
         <div className={classes.imgTextContainer_main_left}>
-          <Image src={human} alt="" width="250" height="333" />
+          <Image className={classes.imgTextContainer_main_left_img} src={human} alt="" width="250" height="333" />
         </div>
         <div className={classes.imgTextContainer_main_right}>
           {t("The NEUROLOGICAL FUNCTIONS correspond to motor and cognitive functions mediated by the brain and nerves.")}
