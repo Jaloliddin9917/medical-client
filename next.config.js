@@ -12,6 +12,7 @@ const nextConfig = {
   },
   images: {
     domains: ['neuroaid.com.sg'],
+    allowFutureImage: true
   },
 };
 
