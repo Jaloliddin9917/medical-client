@@ -9,7 +9,7 @@ const PageNotFound = () => {
     <>
       <Head>
         <title>{t("Page Not Found")}</title>
-        <meta name="description" content="Association of Bariatric and Metabolic Surgeons of Uzbekistan" />
+        <meta name="description" content="Uzbekistan" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

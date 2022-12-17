@@ -19,7 +19,7 @@ const About = () => {
         <title>{t("Medicin market")}</title>
         <meta
           name="description"
-          content="Association of Bariatric and Metabolic Surgeons of Uzbekistan"
+          content="Uzbekistan"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

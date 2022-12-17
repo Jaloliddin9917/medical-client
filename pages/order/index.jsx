@@ -33,14 +33,14 @@ const Order = () => {
         <title>{t("Apply")}</title>
         <meta
           name="description"
-          content="Association of Bariatric and Metabolic Surgeons of Uzbekistan"
+          content="Uzbekistan"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="container">
         <div className={classes.heading}>
-          <p>{t("Ariza formasi")}</p>
+          <p>{t("Buyurtma formasi")}</p>
         </div>
 
         <div className={classes.forma}>
