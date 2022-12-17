@@ -29,10 +29,9 @@
       font-size: 20px;
     }
 
-    i {
-      font-size: 20px;
+    &_icon {
       color: $PrimaryBlue;
-      font-weight: 900;
+      font-size: 20px;
     }
   }
 }
@@ -40,63 +39,6 @@
 @media (max-width: 900px) {}
 
 @media (max-width: 700px) {
-  .bgTextContainer {
-      height: 600px;
-      background: $LightGray;
-      margin-left: 25px;
-      margin-right: 0px;
-  
-      &_title {
-        padding-top: 40px;
-      }
-  
-      &_desc {
-        width: 100%;
-        margin: 35px auto;
-  
-        div {
-          margin-bottom: 30px;
-          margin-right: 30px;
-        }
-  
-        span {
-          margin-top: -30px;
-          display: flex;
-          justify-content: center;
-          margin-left: 35px;
-        }
-  
-      }
-    }
-  .bgTextContainer {
-      height: 430px;
-      background: $LightGray;
-  
-      &_title {
-        padding-top: 40px;
-      }
-  
-      &_desc {
-        width: 100%;
-        margin: 35px auto;
-  
-        div {
-          margin-bottom: 30px;
-          margin-right: 30px;
-        }
-  
-        span {
-          margin-top: -30px;
-          display: flex;
-          justify-content: center;
-          margin-left: 35px;
-        }
-  
-      }
-    }
-}
-
-@media (max-width: 400px) {
   .bgTextContainer {
     height: 600px;
     background: $LightGray;
@@ -124,6 +66,79 @@
       }
 
     }
+  }
+
+  .bgTextContainer {
+    height: 430px;
+    background: $LightGray;
+
+    &_title {
+      padding-top: 40px;
+    }
+
+    &_desc {
+      width: 100%;
+      margin: 35px auto;
+
+      div {
+        margin-bottom: 30px;
+        margin-right: 30px;
+      }
+
+      span {
+        margin-top: -30px;
+        display: flex;
+        justify-content: center;
+        margin-left: 35px;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .bgTextContainer {
+    height: 600px;
+    margin: 0 auto;
+    margin-left: 25px;
+    margin-right: 0px;
+    
+
+    &_title {
+      padding-top: 40px;
+    }
+
+    &_desc {
+      width: 100%;
+      margin: 35px auto;
+
+      div {
+        margin-bottom: 30px;
+        margin-right: 30px;
+      }
+
+      span {
+        margin-top: -30px;
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+      }
+
+      &_icon {
+        margin-left: 10px;
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 400px) {
+  .bgTextContainer {
+    height: 600px;
+    width: 350px;
+    margin-left: 25px;
+    margin-right: 0px;
   }
 
 }

@@ -1,5 +1,6 @@
 import classes from "./TextContent.module.scss";
 import { useTranslation } from "next-i18next";
+import { FaCircle } from 'react-icons/fa';
 import Link from "next/link";
 import Image from "next/image";
 
@@ -13,10 +14,10 @@ const TextContent = () => {
       <div className={classes.aboutTextContainer__main}>
         <div className={classes.main__left}>
           <ul>
-            <li><span>&#9679;</span>Oral treatment in capsule form</li>
-            <li><span>&#9679;</span>2 capsules, 3 times daily</li>
-            <li><span>&#9679;</span>Content can also be diluted in water</li>
-            <li><span>&#9679;</span>Recommended course duration: 3 months renewable</li>
+            <FaCircle className={classes.main__left_icon} /><li>Oral treatment in capsule form</li>
+            <FaCircle className={classes.main__left_icon} /><li>2 capsules, 3 times daily</li>
+            <FaCircle className={classes.main__left_icon} /><li>Content can also be diluted in water</li>
+            <FaCircle className={classes.main__left_icon} /><li>Recommended course duration: 3 months renewable</li>
           </ul>
         </div>
         <div className={classes.main__right}>

@@ -2,40 +2,43 @@
 
 
 .aboutImgTextContainer {
-     background: $LightGray;
-     height: 510px;
-    &_wrapper{
+    background: $LightGray;
+    height: 510px;
+
+    &_wrapper {
         width: 1250px;
         margin: 0 auto;
         padding-top: 50px;
     }
-        &_title {
-            font-size: 40px;
-            text-align: center;
-            margin-bottom: 50px;
-            color: $PrimaryBlue;
-            font-weight: 900;
+
+    &_title {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 50px;
+        color: $PrimaryBlue;
+        font-weight: 900;
+    }
+
+    &_main {
+        display: flex;
+
+        &_right {
+            font-size: 20px;
+            font-weight: normal;
+            margin-top: 20px;
         }
-    
-        &_main {
-            display: flex;
-    
-            &_right {
-                font-size: 20px;
-                font-weight: normal;
-                margin-top: 20px;
-            }
-            &_left {
-                margin-top: 20px;
-                margin-right: 20px;
-            }
+
+        &_left {
+            margin-top: 20px;
+            margin-right: 20px;
         }
-    
-  
+    }
+
+
 }
 
 @media (max-width: 900px) {
-.aboutImgTextContainer {
+    .aboutImgTextContainer {
         height: 830px;
 
         &_wrapper {
@@ -69,9 +72,45 @@
     }
 }
 
-@media (max-width: 400px) {
-.aboutImgTextContainer {
+@media (max-width: 500px) {
+    .aboutImgTextContainer {
         height: 830px;
+        width: 500px;
+
+        &_wrapper {
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        &_title {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        &_main {
+            display: grid;
+            grid-template-columns: auto;
+
+            &_right {
+                font-size: 20px;
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            &_left {
+                margin: 20px auto;
+            }
+        }
+
+
+    }
+}
+@media (max-width: 400px) {
+    .aboutImgTextContainer {
+        height: 830px;
+        width: 400px;
 
         &_wrapper {
             width: 100%;

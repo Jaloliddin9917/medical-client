@@ -67,10 +67,11 @@
 
   .main__left {
     margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .textContainer {
     padding-top: 120px;
     padding-left: 0px;
