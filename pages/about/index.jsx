@@ -24,22 +24,13 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={classes["about__container"]}>
+      
         <TextContent/>
-      </div>
-
-      <div className={classes["about__container__footer"]}>
         <BGBlueContent />
         <ImgTextContent/>
-      </div>
-
-      <div>
         <TextImgContent/>
-      </div>
-
-      <div>
-        <BGBlueContentHome />
-      </div>
+        <BGBlueContentHome /> 
+    
     </div>
   );
 };

@@ -4,7 +4,6 @@ import classes from "./Apply.module.scss";
 import { useTranslation } from "next-i18next";
 import { Label } from "../../components/Order-page/FormGenerator";
 import InputText from "../../components/Order-page/InputText";
-import InputTextArea from "../../components/Order-page/InputTextArea";
 import InputMaska from "../../components/Order-page/InputMask";
 import { useForm, Controller } from "react-hook-form";
 import { SendMessage } from "../../lib";
@@ -40,7 +39,6 @@ const Order = () => {
       </Head>
 
       <div className="container">
-       \
         <div className={classes.heading}>
           <p>{t("Ariza formasi")}</p>
         </div>
@@ -63,23 +61,6 @@ const Order = () => {
                   )}
                 />
               </Label>
-              <Label
-                className={classes.item_input}
-                required
-                labelPosition="top"
-                label={t("Sharif")}
-              >
-                <Controller
-                  className={classes.item}
-                  name="middleName"
-                  control={control}
-                  render={({ field }) => (
-                    <InputText fullWidth placeholder={t("Sharif")} {...field} />
-                  )}
-                />
-              </Label>
-            </div>
-            <div className={classes.forma_inputs}>
               <Label
                 className={classes.item_input}
                 required
@@ -118,23 +99,23 @@ const Order = () => {
                   )}
                 />
               </Label>
+              <Label
+                required
+                labelPosition="top"
+                label={t("Mobil telefon raqami")}
+              >
+                <Controller
+                  className={classes.item}
+                  name="phoneNumber"
+                  control={control}
+                  render={({ field }) => <InputMaska {...field} />}
+                />
+              </Label>
+              <div>
+                <button type="submit">{t("Bizga Qo'shiling")}</button>
+              </div>
             </div>
-            <Label
-              required
-              labelPosition="top"
-              label={t("Mobil telefon raqami")}
-            >
-              <Controller
-                className={classes.item}
-                name="phoneNumber"
-                control={control}
-                render={({ field }) => <InputMaska {...field} />}
-              />
-            </Label>
             <ToastContainer position="top-center" />
-            <div>
-              <button type="submit">{t("Bizga Qo'shiling")}</button>
-            </div>
           </form>
         </div>
       </div>

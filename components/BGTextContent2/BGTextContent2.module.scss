@@ -2,7 +2,9 @@
 
 
 .bgTextContainer2 {
-    height: 280px;
+    height: 320px;
+    margin-left: 100px;
+    margin-right: 100px;
     background: $LightGray;
 
     &_title {
@@ -13,80 +15,59 @@
         padding-top: 50px;
     }
 
-    p {
-        text-align: center;
-    }
+    &_desc {
+        width: 1000px;
+        margin: 35px auto;
 
-    span {
-        font-size: 20px;
-        color: $PrimaryBlue;
-        font-weight: 900;
-    }
-}
-
-
-@media (max-width: 900px) {
-}
-
-@media (max-width: 700px) {
-    .bgTextContainer2 {
-        margin-left: 60px;
-        margin-right: 60px;
-        height: 900px;
-        background: $LightGray;
-    
-        &_title {
-            font-size: 80px;
-            font-weight: 900;
-            color: $PrimaryBlue;
-            text-align: center;
-            padding-top: 50px;
+        div {
+            margin-bottom: 30px;
         }
-    
-        p {
-            text-align: center;
-            font-size: 47px;
-            width: 1100px;
-        }
-    
+
         span {
-            font-size: 80px;
+            margin-top: -25px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        i {
+            font-size: 20px;
             color: $PrimaryBlue;
             font-weight: 900;
-            margin-right: 10px;
-            margin-left: 10px;
         }
     }
 }
+
+
+@media (max-width: 900px) {}
+
+@media (max-width: 700px) {}
 
 @media (max-width: 400px) {
     .bgTextContainer2 {
-        margin-left: 40px;
-        margin-right: 40px;
-        height: 1300px;
+        height: 470px;
+        width: 100%;
+        margin-left: 25px;
+        margin-right: 30px;
         background: $LightGray;
-    
+
         &_title {
-            font-size: 110px;
-            font-weight: 900;
-            color: $PrimaryBlue;
-            text-align: center;
-            padding-top: 50px;
+            font-size: 30px;
+            padding-top: 30px;
         }
-    
-        p {
-            text-align: center;
-            font-size: 68px;
-            width: 1100px;
-        }
-    
-        span {
-            font-size: 80px;
-            color: $PrimaryBlue;
-            font-weight: 900;
-            margin-right: 50px;
-            text-align: start;
+
+        &_desc {
+            width: 100%;
+            p {
+                text-align: center;
+                font-size: 20px;
+            }
+
+            span {
+                font-size: 20px;
+            }
         }
     }
-    
+
 }

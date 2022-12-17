@@ -1,16 +1,16 @@
 @import "../../../../styles/imports.scss";
 
 .header {
-  height: 90px;
+  height: 100px;
   width: 100%;
-  background: #fff;
+  background: $White;
   position: fixed;
-  z-index: 11;
+  z-index: 1111;
+
 
   .navbar {
     height: 100%;
-    width: 1250px;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@
         display: flex;
         gap: 0.5rem;
         font-weight: bold;
-        // border: 1.5px solid $LightGray;
+        border: 1.5px solid $White;
         border-radius: 0.7rem;
         &:hover {
           font-weight: bolder;
@@ -40,7 +40,7 @@
           &:hover {
             border-radius: 0.7rem;
             background: $PrimaryBlue;
-            color: $LightGray;
+            color: $White;
           }
         }
       }
@@ -73,7 +73,7 @@
       cursor: pointer;
       z-index: 10;
       font-family: Roboto sans-serif;
-      margin-left: 65px;
+      // margin-left: 80px;
     }
   }
 }
@@ -107,10 +107,6 @@
       .mobBar {
         display: block;
       }
-      .logo {
-        margin-left: 70px;
-        margin-top: 10px;
-      }
 
       #menu:checked ~ ul {
         left: 0;
@@ -118,5 +114,3 @@
     }
   }
 }
-
-

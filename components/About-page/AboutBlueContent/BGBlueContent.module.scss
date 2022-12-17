@@ -5,6 +5,7 @@
     width: 100%;
     height: 350px;
     background: $PrimaryBlue;
+    // margin-top: 0px;
     padding-top: 40px;
 
     &_title {
@@ -26,4 +27,56 @@
 
 
 
+}
+
+
+
+@media (max-width: 900px) {
+    .aboutBgBlueContainer {
+        width: 100%;
+        height: 320px;
+        background: $PrimaryBlue;
+        padding-top: 40px;
+
+        &_title {
+            width: 100%;
+            font-size: 32px;
+        }
+
+        &_desc {
+            width: 100%;
+            font-size: 20px;
+            margin: 30px auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+
+
+    }
+}
+
+@media (max-width: 400px) {
+    .aboutBgBlueContainer {
+        width: 100%;
+        height: 520px;
+        padding-top: 40px;
+
+        &_title {
+            width: 100%;
+            font-size: 32px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &_desc {
+            width: 100%;
+            margin: 30px auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+
+
+    }
 }

@@ -42,58 +42,33 @@
 }
 
 @media (max-width: 700px) {
-  .bgBlueContainer {
-    height: 800px;
-    width: 1250px;
  
-
-    &_titles {
-      font-size: 80px;
-    }
-
-    &_desc {
-      font-size: 50px;
-      
-    }
-
-    &_btWrapper {
-      display: flex;
-      margin-top: 75px;
-    }
-
-    &_button {
-      height: 130px;
-      width: 515px;
-      font-size: 30px;
-    }
-  }
 }
 
 
 @media (max-width: 400px) {
-  .bgBlueContainer {
-    height: 940px;
-    width: 1250px;
- 
+.bgBlueContainer {
+    height: 320px;
+    width: 400px;
+    padding-top: 30px;
 
     &_titles {
-      font-size: 90px;
+      font-size: 30px;
+      margin-bottom: 10px;
     }
 
     &_desc {
-      font-size: 60px;
-      
+      width: 100%;
+      margin: 0 auto;
     }
 
     &_btWrapper {
-      display: flex;
       margin-top: 25px;
     }
 
     &_button {
-      height: 180px;
-      width: 615px;
-      font-size: 50px;
+      height: 60px;
+      width: 215px;
     }
   }
 }

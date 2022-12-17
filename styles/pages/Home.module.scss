@@ -3,35 +3,11 @@
 .home {
   background-color: #fff;
 
-  &__carusel {
-    padding-top: 90px;
-  }
-
-  &__mini-content {
-
-    width: 1250px;
-    margin: 0 auto;
-  }
-
-  
-
-
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .home__carusel {
     display: none;
   }
 }
 
-@media (max-width: 700px) {
-  .home__carusel {
-    display: none;
-  }
-}
-
-@media (max-width: 510px) {
-  .home__partners__image {
-    width: 80%;
-  }
-}

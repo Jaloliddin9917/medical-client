@@ -1,7 +1,9 @@
 @import "../../styles/imports.scss";
 
 .textContainer {
-  padding-top: 50px;
+  padding-top: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
   box-sizing: border-box;
 
   &__title {
@@ -13,7 +15,7 @@
     font-weight: 900;
   }
 
-  &__main {
+  &__main { 
     display: grid;
     grid-template-columns: 70% 30%;
 
@@ -29,6 +31,7 @@
         font-weight: 700;
       }
     }
+
     .main__right {
       position: relative;
       width: 400px;
@@ -37,74 +40,58 @@
   }
 }
 
-@media (max-width: 900px) {
-
-}
+@media (max-width: 900px) {}
 
 @media (max-width: 700px) {
   .textContainer {
-    padding-top: 150px;
+    padding-top: 120px;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+
+    &__title {
+      font-size: 20px;
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    &__main {
+      display: grid;
+      grid-template-columns: auto;
+    }
   }
 
-  .textContainer__main {
-    display: grid;
-    grid-template-columns: auto;
+  .main__right {
+    margin: 0 auto;
   }
 
   .main__left {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
-  .main__right_img {
-    width: 1200px;
-    height: 800px;
-  }
-
-  .main__left_first {
-    margin-bottom: 40px;
-    font-size: 37px;
-  }
-
-  .main__left_second {
-    font-size: 37px;
-  }
-
-  .textContainer__title {
-    width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: 20px;
   }
 }
 
 @media (max-width: 400px) {
   .textContainer {
-    padding-top: 150px;
-  }
+    padding-top: 120px;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
 
-  .textContainer__main {
-    display: grid;
-    grid-template-columns: auto;
-  }
+    &__title {
+      font-size: 20px;
+      width: 350px;
+      margin-left: 20px;
+    }
 
-  .main__left {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+    &__main {
+      display: grid;
+      grid-template-columns: auto;
+    }
 
-  .main__left_first {
-    margin-bottom: 50px;
-    font-size: 67px;
-  }
+    .main__left {
+      margin-left: 20px;
+    }
 
-  .main__left_second {
-    font-size: 67px;
-  }
 
-  .textContainer__title {
-    width: 100%;
-    font-size: 60px;
   }
-
- 
 }

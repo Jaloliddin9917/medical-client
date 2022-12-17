@@ -8,7 +8,7 @@ const InputMaska = ({ radius, ...props }) => {
       mask="(+\9\98) 99 999-99-99"
       placeholder="(+998) •• ••• •• ••"
       {...props}
-      style={{ borderRadius: radius ? "15px" : "0" }}
+      style={{ borderRadius: radius ? "15px" : "0"}}
     >
       {(inputProps) => (
         <MaterialInput
@@ -19,7 +19,7 @@ const InputMaska = ({ radius, ...props }) => {
           sx={{
             fontSize: "22px",
             padding: "10px 10px",
-            background: "#f4f4f8",
+            background: "white",
             borderRadius: "15px",
             width: "100%",
             border: "1px solid black",

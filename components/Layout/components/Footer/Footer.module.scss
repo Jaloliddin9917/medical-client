@@ -2,9 +2,7 @@
 
 .footer__container {
   background-color: $White;
-
-  width: 1250px;
-  margin: 0 auto;
+  padding: 1rem 5rem;
 }
 
 .footer {
@@ -68,13 +66,10 @@
 }
 
 .footer__bottom {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.4rem 0;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-  border-bottom: 0.0625rem solid $PrimaryBlue;
-  border-top: 0.0625rem solid $PrimaryBlue;
+    width: 100%;
+    height: 80px;
+    background: $PrimaryBlue;
+    color: $White;
 }
 
 @media (max-width: 1030px) {

@@ -2,6 +2,9 @@
 
 
 .imgTextContainer {
+    margin-left: 100px;
+    margin-right: 100px;
+
     &_title {
         font-size: 40px;
         text-align: center;
@@ -23,82 +26,37 @@
     }
 }
 
-@media (max-width: 900px) {
-}
+@media (max-width: 900px) {}
 
-@media (max-width: 700px) {
+@media (max-width: 700px) {}
+
+@media (max-width: 400px) {
     .imgTextContainer {
+        margin-left: 0px;
+        margin-right: 0px;
+
         &_title {
-            font-size: 65px;
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            color: $PrimaryBlue;
-            font-weight: 900;
+            font-size: 30px;
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
-    
+
         &_main {
             display: grid;
             grid-template-columns: auto;
-    
+
             &_right {
-                font-size: 45px;
+                font-size: 21px;
                 font-weight: normal;
                 margin-top: 50px;
-                margin-left: 200px;
-                margin-right: 190px;
+                margin-left: 25px;
+                margin-right: 10px;
             }
-    
+
             &_left {
                 margin: 0 auto;
-             &_img {
-                width: 500px;
-                height: 700px;
-               
-             }
-    
-    
             }
         }
     }
-}
 
-@media (max-width: 400px) {
-  
-.imgTextContainer {
-    &_title {
-        font-size: 100px;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        color: $PrimaryBlue;
-        font-weight: 900;
-    }
-
-    &_main {
-        display: grid;
-        grid-template-columns: auto;
-
-        &_right {
-            font-size: 70px;
-            font-weight: normal;
-            margin-top: 50px;
-            margin-left: 30px;
-            margin-right: 13px;
-        }
-
-        &_left {
-            margin: 0 auto;
-         &_img {
-            width: 900px;
-            height: 1000px;
-           
-         }
-
-
-        }
-    }
-}
-
-   
 }

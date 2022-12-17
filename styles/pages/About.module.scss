@@ -3,30 +3,5 @@
 .about {
   background-color: #fff;
 
-  &__container {
-    padding-top: 90px;
-    width: 1250px;
-    margin: 0 auto;
 
-
-    &__footer {
-       width: 100%;
-    }
-  }
-
-  
-
-
-}
-
-@media (max-width: 700px) {
-  .home__partners__image {
-    width: 30%;
-  }
-}
-
-@media (max-width: 510px) {
-  .home__partners__image {
-    width: 80%;
-  }
 }

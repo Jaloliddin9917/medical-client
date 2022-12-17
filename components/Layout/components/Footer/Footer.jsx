@@ -5,18 +5,13 @@ import Logo from "../../../../public/media/images/Logo.png";
 import Location from "../../../../public/media/icons/location.svg";
 import Message from "../../../../public/media/icons/message.svg";
 import Phone from "../../../../public/media/icons/phone.svg";
-import YouTube from "../../../../public/media/icons/Youtube.svg";
 import Telegram from "../../../../public/media/icons/Telegram.svg";
 import Facebook from "../../../../public/media/icons/Facebook.svg";
-import TikTok from "../../../../public/media/icons/TikTok.svg";
 import Instagram from "../../../../public/media/icons/Instagram.svg";
-import LinkedIn from "../../../../public/media/icons/LinkedIn.svg";
-import Twitters from "../../../../public/media/icons/Twitters.svg";
-import data from "../links.json";
-import FooterInfo from "./FooterInfo";
 
 const Footer = () => {
   return (
+    <>
     <footer className={classes.footer__container}>
       <div className={classes.footer}>
         <div className={classes["footer__item"]}>
@@ -44,37 +39,14 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <FooterInfo
-          className={classes["footer__item"]}
-          title="about"
-          links={data["about-info"]}
-        />
-       
       </div>
-      <div className={classes.footer__bottom}>
-        <a href="#">
-          <Image src={Facebook} width="100%" alt="facebook" />
-        </a>
-        <a href="#">
-          <Image src={Twitters} width="100%" alt="telegram" />
-        </a>
-        <a href="#">
-          <Image src={LinkedIn} width="100%" alt="telegram" />
-        </a>
-        <a href="#">
-          <Image src={Instagram} width="100%" alt="telegram" />
-        </a>
-        <a href="#">
-          <Image src={TikTok} width="100%" alt="telegram" />
-        </a>
-        <a href="#">
-          <Image src={Telegram} width="100%" alt="telegram" />
-        </a>
-        <a href="#">
-          <Image src={YouTube} width="100%" alt="telegram" />
-        </a>
-      </div>
+      
     </footer>
+      <div className={classes.footer__bottom}>
+        MAHP1700492. This site is intended for audiences in Singapore only. Copyright © 2022.
+        All Rights Reserved NeuroAiD™ by Moleac Pte Ltd.
+      </div>
+    </>
   );
 };
 

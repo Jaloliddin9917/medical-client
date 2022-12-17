@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import LogoWhite from "../../../../public/media/images/Logo.png";
 import Menu from "../../../../public/media/icons/menu.svg";
-import Eng from "../../../../public/media/icons/eng.svg";
 import Rus from "../../../../public/media/icons/ru.svg";
 import Uzb from "../../../../public/media/icons/uz.svg";
 import data from "../links.json";
@@ -27,7 +26,7 @@ const Navbar = () => {
       <nav className={classes.navbar}>
         <div className={classes.logo}>
           <Link href="/">
-            <Image src={LogoWhite} alt="" width="193" height="66" />
+            <Image src={LogoWhite} alt="" width="200" height="100" />
           </Link>
         </div>
         <input id={classes["menu"]} type="checkbox" checked={open} />
@@ -72,6 +71,7 @@ const Navbar = () => {
                 alt="rus"
               />
             </div>
+          
           </li>
         </ul>
 

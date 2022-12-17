@@ -25,15 +25,14 @@ export default function Home() {
       <div className={classes["home__carusel"]}>
         <CaruselContent />
       </div>
-      <div className={classes["home__mini-content"]}>
+     
         <TextContent />
         <BGTextContent />
         <ImgTextContent />
         <BGTextContent2 />
-      </div>
-      <div className={classes["home__blue"]}>
+    
         <BGBlueContent />
-      </div>
+    
     </div>
   );
 }

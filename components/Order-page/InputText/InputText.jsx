@@ -15,10 +15,10 @@ const InputText = ({ className, label, radius, ...props }) => {
       placeholder={label}
       sx={{
         border: "none",
-        backgroundColor: "#F4F4F8",
+        backgroundColor: "white",
         borderRadius: radius ? "15px" : "0",
         "& fieldset": {
-          borderColor: "#7F2941",
+          borderColor: "#13316d",
           borderRadius: radius ? "15px" : "0",
         },
       }}
