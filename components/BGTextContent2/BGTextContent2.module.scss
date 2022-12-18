@@ -2,7 +2,7 @@
 
 
 .bgTextContainer2 {
-    height: 320px;
+    height: 350px;
     margin-left: 100px;
     margin-right: 100px;
     background: $LightGray;
@@ -47,6 +47,7 @@
 @media (max-width: 500px) {
     .bgTextContainer2 {
         height: 520px;
+        width: 400px;
         margin: 0 auto;
         margin-left: 25px;
         margin-right: 0px;

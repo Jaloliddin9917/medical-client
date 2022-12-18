@@ -29,7 +29,7 @@ const About = () => {
         <BGBlueContent />
         <ImgTextContent/>
         <TextImgContent/>
-        <BGBlueContentHome /> 
+        {/* <BGBlueContentHome />  */}
     
     </div>
   );
