@@ -6,7 +6,6 @@ import { Label } from "../../components/Order-page/FormGenerator";
 import InputText from "../../components/Order-page/InputText";
 import InputMaska from "../../components/Order-page/InputMask";
 import { useForm, Controller } from "react-hook-form";
-import { SendMessage } from "../../lib";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -20,12 +19,10 @@ const Order = () => {
     },
   });
 
-  const sendmsg = SendMessage();
   const onSubmit = (data) => {
-    sendmsg
-      .mutateAsync(data)
-      .then((res) => notify())
-      .catch((err) => notifyError());
+    console.log(data);
+      // .then((res) => notify())
+      // .catch((err) => notifyError());
   };
   return (
     <>
