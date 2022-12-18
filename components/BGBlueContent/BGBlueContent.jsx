@@ -12,6 +12,7 @@ const BGBlueContent = () => {
       </div> */}
       <ul className={classes.bgBlueContainer_desc}>
         <li>{t("Please seek professional advice from your physician or your leading pharmacy.")}</li>
+        <br />
         <li>{t("You could also leave your questions by clicking on the box below.")}</li>
       </ul>
       <div className={classes.bgBlueContainer_btWrapper}>
