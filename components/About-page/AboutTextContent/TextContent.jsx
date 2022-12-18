@@ -14,10 +14,10 @@ const TextContent = () => {
       <div className={classes.aboutTextContainer__main}>
         <div className={classes.main__left}>
           <ul>
-            <FaCircle className={classes.main__left_icon} /><li>Oral treatment in capsule form</li>
-            <FaCircle className={classes.main__left_icon} /><li>2 capsules, 3 times daily</li>
-            <FaCircle className={classes.main__left_icon} /><li>Content can also be diluted in water</li>
-            <FaCircle className={classes.main__left_icon} /><li>Recommended course duration: 3 months renewable</li>
+            <FaCircle className={classes.main__left_icon} /><li>{t("Oral treatment in capsule form")}</li>
+            <FaCircle className={classes.main__left_icon} /><li>{t("2 capsules, 3 times daily")}</li>
+            <FaCircle className={classes.main__left_icon} /><li>{t("Content can also be diluted in water")}</li>
+            <FaCircle className={classes.main__left_icon} /><li>{t("Recommended course duration: 3 months renewable")}</li>
           </ul>
         </div>
         <div className={classes.main__right}>
