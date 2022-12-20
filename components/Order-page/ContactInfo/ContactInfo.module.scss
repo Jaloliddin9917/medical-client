@@ -3,5 +3,26 @@
 .container__info {
     width: 400px;
     height: 400px;
-    background: $DarkGray;
+
+    .contact_icon {
+        display: flex;
+        margin-top: 20px;
+        &_square {
+            width: 70px;
+            height: 70px;
+            background: $PrimaryBlue;
+            border-radius: 50%;
+        }
+        &_text {
+            margin-top: 18px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.iconSvg {
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
 }

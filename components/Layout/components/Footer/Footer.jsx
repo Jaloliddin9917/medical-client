@@ -12,36 +12,36 @@ import Instagram from "../../../../public/media/icons/Instagram.svg";
 const Footer = () => {
   return (
     <>
-    <footer className={classes.footer__container}>
-      <div className={classes.footer}>
-        <div className={classes["footer__item"]}>
-          <Image src={Logo} width="300" height="100" alt="logo" />
-          <div className={classes.footer__item__info}>
-            <Image src={Location} width="20" height="20" alt="logo" />
-            <p>
-              <a href="">
-                Association of Bariatric and Metabolic Surgeons of Uzbekistan
-              </a>
-            </p>
-          </div>
-          <div className={classes.footer__item__info}>
-            <Image src={Message} width="20" height="20" alt="logo" />
-            <p>
-              <a href="mailto: oktyabrteshaev@gmail.com">
-                oktyabrteshaev@gmail.com
-              </a>
-            </p>
-          </div>
-          <div className={classes.footer__item__info}>
-            <Image src={Phone} width="20" height="20" alt="logo" />
-            <p>
-              <a href="tel: +998 90 358 13 41">+998 90 358 13 41</a>
-            </p>
+      <footer className={classes.footer__container}>
+        <div className={classes.footer}>
+          <div className={classes["footer__item"]}>
+            <Image src={Logo} width="300" height="100" alt="logo" />
+            <div className={classes.footer__item__info}>
+              <Image src={Location} width="20" height="20" alt="logo" />
+              <p>
+                <a href="">
+                  Адрес: Яккасарайский район, ул.Бабура 22
+                </a>
+              </p>
+            </div>
+            <div className={classes.footer__item__info}>
+              <Image src={Message} width="20" height="20" alt="logo" />
+              <p>
+                <a href="mailto: jakhongirmirjuraev@gmail.com">
+                  jakhongirmirjuraev@gmail.com
+                </a>
+              </p>
+            </div>
+            <div className={classes.footer__item__info}>
+              <Image src={Phone} width="20" height="20" alt="logo" />
+              <p>
+                <a href="tel: +998 33 335 03 03">+998 33 335 03 03</a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      
-    </footer>
+
+      </footer>
       <div className={classes.footer__bottom}>
         MAHP1700492. This site is intended for audiences in Singapore only. Copyright © 2022.
         All Rights Reserved NeuroAiD™ by Moleac Pte Ltd.
