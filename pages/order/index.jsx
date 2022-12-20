@@ -8,6 +8,7 @@ import InputMaska from "../../components/Order-page/InputMask";
 import { useForm, Controller } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ContactInfo from "../../components/Order-page/ContactInfo";
 
 const Order = () => {
   const { t } = useTranslation();
@@ -21,17 +22,14 @@ const Order = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-      // .then((res) => notify())
-      // .catch((err) => notifyError());
+    // .then((res) => notify())
+    // .catch((err) => notifyError());
   };
   return (
     <>
       <Head>
         <title>{t("Apply")}</title>
-        <meta
-          name="description"
-          content="Uzbekistan"
-        />
+        <meta name="description" content="Uzbekistan" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -40,83 +38,89 @@ const Order = () => {
           <p>{t("Buyurtma formasi")}</p>
         </div>
 
-        <div className={classes.forma}>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <div className={classes.forma_inputs}>
-              <Label
-                className={classes.item_input}
-                required
-                labelPosition="top"
-                label={t("Ism")}
-              >
-                <Controller
-                  className={classes.item}
-                  name="name"
-                  control={control}
-                  render={({ field }) => (
-                    <InputText fullWidth placeholder={t("Ismi")} {...field} />
-                  )}
-                />
-              </Label>
-              <Label
-                className={classes.item_input}
-                required
-                labelPosition="top"
-                label={t("Familya")}
-              >
-                <Controller
-                  className={classes.item}
-                  name="lastName"
-                  control={control}
-                  render={({ field }) => (
-                    <InputText
-                      fullWidth
-                      placeholder={t("Familiya")}
-                      {...field}
-                    />
-                  )}
-                />
-              </Label>
-              <Label
-                className={classes.item_input}
-                required
-                labelPosition="top"
-                label={t("E-pochta manzili")}
-              >
-                <Controller
-                  className={classes.item}
-                  name="email"
-                  control={control}
-                  render={({ field }) => (
-                    <InputText
-                      fullWidth
-                      placeholder={t("E-pochta manzili")}
-                      {...field}
-                    />
-                  )}
-                />
-              </Label>
-              <Label
-                required
-                labelPosition="top"
-                label={t("Mobil telefon raqami")}
-              >
-                <Controller
-                  className={classes.item}
-                  name="phoneNumber"
-                  control={control}
-                  render={({ field }) => <InputMaska {...field} />}
-                />
-              </Label>
-              <div>
-                <button type="submit">{t("Bizga Qo'shiling")}</button>
+
+
+        <div className={classes.contact}>
+          <div>
+            <ContactInfo/>
+          </div>
+          <div className={classes.forma}>
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <div className={classes.forma_inputs}>
+                <Label
+                  className={classes.item_input}
+                  required
+                  labelPosition="top"
+                  label={t("Ism")}
+                >
+                  <Controller
+                    className={classes.item}
+                    name="name"
+                    control={control}
+                    render={({ field }) => (
+                      <InputText fullWidth placeholder={t("Ismi")} {...field} />
+                    )}
+                  />
+                </Label>
+                <Label
+                  className={classes.item_input}
+                  required
+                  labelPosition="top"
+                  label={t("Familya")}
+                >
+                  <Controller
+                    className={classes.item}
+                    name="lastName"
+                    control={control}
+                    render={({ field }) => (
+                      <InputText
+                        fullWidth
+                        placeholder={t("Familiya")}
+                        {...field}
+                      />
+                    )}
+                  />
+                </Label>
+                <Label
+                  className={classes.item_input}
+                  required
+                  labelPosition="top"
+                  label={t("E-pochta manzili")}
+                >
+                  <Controller
+                    className={classes.item}
+                    name="email"
+                    control={control}
+                    render={({ field }) => (
+                      <InputText
+                        fullWidth
+                        placeholder={t("E-pochta manzili")}
+                        {...field}
+                      />
+                    )}
+                  />
+                </Label>
+                <Label
+                  required
+                  labelPosition="top"
+                  label={t("Mobil telefon raqami")}
+                >
+                  <Controller
+                    className={classes.item}
+                    name="phoneNumber"
+                    control={control}
+                    render={({ field }) => <InputMaska {...field} />}
+                  />
+                </Label>
+                <div>
+                  <button type="submit">{t("Bizga Qo'shiling")}</button>
+                </div>
               </div>
-            </div>
-            <ToastContainer position="top-center" />
-          </form>
+              <ToastContainer position="top-center" />
+            </form>
+          </div>
         </div>
       </div>
-
     </>
   );
 };
