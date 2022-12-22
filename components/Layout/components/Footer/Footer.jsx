@@ -42,10 +42,9 @@ const Footer = () => {
         </div>
 
       </footer>
-      <div className={classes.footer__bottom}>
-        MAHP1700492. This site is intended for audiences in Singapore only. Copyright © 2022.
-        All Rights Reserved NeuroAiD™ by Moleac Pte Ltd.
-      </div>
+      {/* <div className={classes.footer__bottom}>
+       
+      </div> */}
     </>
   );
 };

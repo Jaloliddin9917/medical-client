@@ -7,9 +7,9 @@ const BGBlueContent = () => {
   const { t } = useTranslation();
   return (
     <div className={classes.bgBlueContainer}>
-      {/* <div className={classes.bgBlueContainer_text}>
-        {t("Find out if NeuroAiD™II is right for you:")}
-      </div> */}
+     
+      {/* <h1 className={classes.bgBlueContainer_text}>{t("Find out if NeuroAiD™II is right for you:")}</h1> */}
+      
       <ul className={classes.bgBlueContainer_desc}>
         <li>{t("Please seek professional advice from your physician or your leading pharmacy.")}</li>
         <br />
