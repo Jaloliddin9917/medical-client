@@ -17,12 +17,12 @@ const InputMaska = ({ radius, ...props }) => {
           type="tel"
           disableUnderline
           sx={{
-            fontSize: "22px",
+            fontSize: "16px",
             padding: "10px 10px",
             background: "white",
             borderRadius: "15px",
             width: "100%",
-            border: "1px solid black",
+            border: "1px solid #13316d",
           }}
         />
       )}

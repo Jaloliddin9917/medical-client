@@ -5,9 +5,6 @@ import Logo from "../../../../public/media/images/Logo.png";
 import Location from "../../../../public/media/icons/location.svg";
 import Message from "../../../../public/media/icons/message.svg";
 import Phone from "../../../../public/media/icons/phone.svg";
-import Telegram from "../../../../public/media/icons/Telegram.svg";
-import Facebook from "../../../../public/media/icons/Facebook.svg";
-import Instagram from "../../../../public/media/icons/Instagram.svg";
 
 const Footer = () => {
   return (
@@ -20,7 +17,7 @@ const Footer = () => {
               <Image src={Location} width="20" height="20" alt="logo" />
               <p>
                 <a href="">
-                  Адрес: Яккасарайский район, ул.Бабура 22
+                  Manzil: Yakkasaroy tumani, Bobur ko‘chasi 22-uy
                 </a>
               </p>
             </div>

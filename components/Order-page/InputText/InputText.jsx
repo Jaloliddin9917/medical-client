@@ -14,6 +14,7 @@ const InputText = ({ className, label, radius, ...props }) => {
       color="primary"
       placeholder={label}
       sx={{
+        fontSize: "16px",
         border: "none",
         backgroundColor: "white",
         borderRadius: radius ? "15px" : "0",
