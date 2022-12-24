@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Navbar.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import LogoWhite from "../../../../public/media/images/Logo.png";
+import LogoWhite from "../../../../public/media/icons/NeuroAiDHeader.png";
 import Menu from "../../../../public/media/icons/menu.svg";
 import Rus from "../../../../public/media/icons/ru.svg";
 import Uzb from "../../../../public/media/icons/uz.svg";

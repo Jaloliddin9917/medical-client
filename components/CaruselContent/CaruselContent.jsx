@@ -7,6 +7,28 @@ import Image from "next/image";
 
 import { data } from "./data";
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "red" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "green" }}
+      onClick={onClick}
+    />
+  );
+}
+
 const CaruselContent = () => {
   return (
       <div className={classes.slider}>
@@ -31,6 +53,10 @@ const settings = {
   speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: true,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />
+  
 };
 
 export default CaruselContent;

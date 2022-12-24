@@ -64,24 +64,7 @@ $fontweight: (200, 300, 400, 500, 600, 700, 800);
     font-weight: #{$fw} !important;
   }
 }
-.sld {
-  ul.slick-dots {
-    bottom: 10px;
-    .slick-active {
-      color: white;
-      button {
-        &::before {
-          color: white;
-        }
-      }
-    }
-    button {
-      &::before {
-        color: white;
-      }
-    }
-  }
-}
+
 $fontsize: (
   8,
   9,

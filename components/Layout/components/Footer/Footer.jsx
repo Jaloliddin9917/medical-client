@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./Footer.module.scss";
 import Image from "next/image";
-import Logo from "../../../../public/media/images/Logo.png";
-import Location from "../../../../public/media/icons/location.svg";
-import Message from "../../../../public/media/icons/message.svg";
-import Phone from "../../../../public/media/icons/phone.svg";
+import Logo from "../../../../public/media/icons/NeuroAiDFooter.png";
+import { GoLocation } from 'react-icons/go';
+import { CgMail } from 'react-icons/cg';
+import { FiPhoneCall } from 'react-icons/fi';
 
 const Footer = () => {
   return (
@@ -14,7 +14,8 @@ const Footer = () => {
           <div className={classes["footer__item"]}>
             <Image src={Logo} width="300" height="100" alt="logo" />
             <div className={classes.footer__item__info}>
-              <Image src={Location} width="20" height="20" alt="logo" />
+              {/* <Image style={{color: "red"}} src={Location} width="20" height="20" alt="logo" /> */}
+              <GoLocation style={{width: "20px", height: "20px"}} className={classes.footer_icon} />
               <p>
                 <a href="">
                   Manzil: Yakkasaroy tumani, Bobur ko‘chasi 22-uy
@@ -22,7 +23,7 @@ const Footer = () => {
               </p>
             </div>
             <div className={classes.footer__item__info}>
-              <Image src={Message} width="20" height="20" alt="logo" />
+              <CgMail style={{ width: "20px", height: "20px" }} />
               <p>
                 <a href="mailto: jakhongirmirjuraev@gmail.com">
                   jakhongirmirjuraev@gmail.com
@@ -30,7 +31,7 @@ const Footer = () => {
               </p>
             </div>
             <div className={classes.footer__item__info}>
-              <Image src={Phone} width="20" height="20" alt="logo" />
+              <FiPhoneCall style={{ width: "20px", height: "20px" }} />
               <p>
                 <a href="tel: +998 33 335 03 03">+998 33 335 03 03</a>
               </p>
