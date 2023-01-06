@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   const [queryClient] = useState(() => new QueryClient());
   return (
     <QueryClientProvider client={queryClient}>
-      <Suspense fallback>
+      <Suspense fallback="true">
         <Layout>
           <Component {...pageProps} />
         </Layout>

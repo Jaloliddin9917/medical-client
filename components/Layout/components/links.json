@@ -5,12 +5,27 @@
       "href": "/"
     },
     {
-      "title": "Haqida NeuroAiD™II",
-      "href": "/about"
+      "title": "",
+      "href": "/aboutNeuroAiD",
+      "comp" : "aboutNeuroAiD"
     },
     {
       "title": "Buyutma berish NeuroAiD™II",
       "href": "/order"
+    }
+  ],
+  "about": [
+     {
+      "title": "Haqida NeuroAiD™II",
+       "href": "/aboutNeuroAiD"
+     },
+     {
+      "title": "Tarkibi - Doza",
+      "href": "/compositioDosage"
+     },
+    {
+      "title": "Xavfsizlik profili",
+      "href": "/safetyProfile"
     }
   ]
 }

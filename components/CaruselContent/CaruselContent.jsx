@@ -12,7 +12,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "red" }}
+      style={{ ...style, display: "block", background: "red", display: "none" }}
       onClick={onClick}
     />
   );
@@ -31,19 +31,19 @@ function SamplePrevArrow(props) {
 
 const CaruselContent = () => {
   return (
-      <div className={classes.slider}>
-        <Slider {...settings}>
-          {data.mainSlider.map((item, index) => (
-            <div key={index} className={classes.slider__item}>
-              <div style={{ backgroundImage: `url(${item.img})` }} className={classes.slider__item__img}></div>
-              {/* <div className={classes.slider__item__text}>
+    <div className={classes.slider}>
+      <Slider {...settings}>
+        {data.mainSlider.map((item, index) => (
+          <div key={index} className={classes.slider__item}>
+            <div style={{ backgroundImage: `url(${item.img})` }} className={classes.slider__item__img}></div>
+            {/* <div className={classes.slider__item__text}>
               <h1>{item.title}</h1>
               <p>{item.text}</p>
             </div> */}
-            </div>
-          ))}
-        </Slider>
-      </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 };
 
@@ -56,7 +56,8 @@ const settings = {
   autoplay: true,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />
-  
+
 };
+
 
 export default CaruselContent;
