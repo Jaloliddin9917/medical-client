@@ -73,33 +73,45 @@ const Navbar = () => {
             >
               <Link href={link.href}>{t(`${link.title}`)}</Link>
               
-              {link.comp === "aboutNeuroAiD" ?
-                <Dropdown
-                  menu={{
-                    items,
-                  }}
-                  trigger={['click']}
-                  className={classes.dropdownLink}
-                >
-                  <a onClick={(e) => e.preventDefault()}>
-                    <Space style={{ fontWeight: "500"}}>
-                      NeuroAiD™II Haqida
-                      <DownOutlined />
-                    </Space>
-                  </a>
-                </Dropdown> : null
-              }
+              
+                {link.comp === "aboutNeuroAiD" ?
+                  <Dropdown
+                    menu={{
+                      items,
+                    }}
+                    trigger={['click']}
+
+                  >
+                    <a onClick={(e) => e.preventDefault()}>
+                      <Space style={{ fontWeight: "500" }}>
+                      {t("NeuroAiD™II Haqida")}
+                        <DownOutlined />
+                      </Space>
+                    </a>
+                  </Dropdown> : null
+                }
+             
             </li>
           ))}
-          <li className={classes.extraLink}
-            onClick={() => {
-              setOpen(open === false ? true : false);
-            }}
-          >
-              <Link href={"/about"}>{t("NeuroAiD™II Haqida")}</Link>
-              <Link href={"/composition-dosage"}>{t("Tarkibi - Doza")}</Link>
-              <Link href={"/safety-profile"}>{t("Xavfsizlik profili")}</Link>
-          </li>
+         
+            {data.about.map((link, idx) => (
+              <li
+                style={{
+                  border:
+                    router.pathname === link.href
+                      ? "1px solid #aec5ce"
+                      : "1px solid transparent",
+                }}
+                onClick={() => {
+                  setOpen(open === false ? true : false);
+                }}
+                key={idx}
+                className={classes.extraLink}
+              >
+                <Link href={link.href}>{t(`${link.title}`)}</Link>
+              </li>
+            )) }
+         
           <li
             onClick={() => {
               setOpen(open === false ? true : false);

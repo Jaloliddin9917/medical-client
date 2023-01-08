@@ -16,7 +16,7 @@
         position: absolute;
         top: 250px;
         color: white;
-        left: 270px;
+        left: 25%;
     }
 
     &_button {
@@ -30,6 +30,9 @@
         font-size: 20px;
         border: 2px solid white;
     }
+        &_button:hover {
+            background: #242323;
+        }
 }
 
 .section2 {
@@ -171,7 +174,7 @@
             width: 300px;
             position: absolute;
             top: 250px;
-            left: 100px;
+            left: 16%;
             font-size: 18px;
 
         }
@@ -204,7 +207,7 @@
             font-size: 40px;
             position: absolute;
             top: 150px;
-            left: 10px;
+            left: 12%;
         }
 
         &_button {
@@ -212,7 +215,7 @@
             width: 300px;
             position: absolute;
             top: 250px;
-            left: 50px;
+            left: 13%;
             font-size: 18px;
 
         }

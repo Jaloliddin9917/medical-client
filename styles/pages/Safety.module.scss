@@ -17,7 +17,7 @@
         position: absolute;
         top: 250px;
         color: white;
-        left: 400px;
+        left: 22%;
     }
 
     &_button {
@@ -114,7 +114,7 @@
             h3 {
                 color: $PrimaryBlue;
                 text-align: center;
-                margin-top: 50px;
+                margin-top: 30px;
             }
         }
     }
@@ -158,7 +158,7 @@
             font-size: 40px;
             position: absolute;
             top: 150px;
-            left: 110px;
+            left: 100px;
         }
 
         &_button {
@@ -166,7 +166,7 @@
             width: 300px;
             position: absolute;
             top: 250px;
-            left: 86px;
+            left: 75px;
             font-size: 18px;
 
         }
@@ -191,8 +191,12 @@
         }
 
         &_content {
-            width: 400px;
-            height: 1070px;
+            width: auto;
+            height: 1150px;
+
+            &_text {
+                padding: 20px;
+            }
         }
     }
 
@@ -215,7 +219,7 @@
             font-size: 40px;
             position: absolute;
             top: 150px;
-            left: 70px;
+            left: 60px;
         }
 
         &_button {
@@ -248,8 +252,12 @@
         }
 
         &_content {
-            width: 400px;
-            height: 1070px;
+            width: auto;
+            height: 1150px;
+
+            &_text {
+                padding: 20px;
+            }
         }
     }
 

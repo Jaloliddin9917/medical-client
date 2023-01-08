@@ -4,7 +4,7 @@ import classes from "../../styles/pages/Safety.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Safity from "../../public/media/images/safity.jpg"
+
 
 
 const About = () => {
@@ -23,7 +23,10 @@ const About = () => {
             <div className={classes.section1} style={{ paddingTop: "100px" }}>
                 <div className={classes.section1_imgSafity} />
                 <h1 className={classes.section1_title}>{t("Safety & Profile")}</h1>
-                <button className={classes.section1_button}>{t("BIZ BILAN BOG'LANISH")}</button>
+                <Link href="/order">
+                    <button className={classes.section1_button}>{t("BIZ BILAN BOG'LANISH")}</button>
+                </Link>
+                
             </div>
 
             <div className={classes.section2}>
@@ -74,7 +77,6 @@ export const getStaticProps = async (context) => {
     return {
         props: {
             ...(await serverSideTranslations(locale, ["common"])),
-             fallback: false
         },
     };
 };

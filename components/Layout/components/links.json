@@ -6,7 +6,7 @@
     },
     {
       "title": "",
-      "href": "/aboutNeuroAiD",
+      "href": "",
       "comp" : "aboutNeuroAiD"
     },
     {
@@ -17,15 +17,15 @@
   "about": [
      {
       "title": "Haqida NeuroAiD™II",
-       "href": "/aboutNeuroAiD"
+       "href": "/about"
      },
      {
       "title": "Tarkibi - Doza",
-      "href": "/compositioDosage"
+      "href": "/composition-dosage"
      },
     {
       "title": "Xavfsizlik profili",
-      "href": "/safetyProfile"
+      "href": "/safety-profile"
     }
   ]
 }
