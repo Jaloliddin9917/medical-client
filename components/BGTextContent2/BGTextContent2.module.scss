@@ -47,11 +47,10 @@
 @media (max-width: 500px) {
     .bgTextContainer2 {
         height: 520px;
-        width: 500px;
-        margin: 0 auto;
-        margin-left: 25px;
+        width: 100%;
+        margin-left: 0px;
         margin-right: 0px;
-        background: $LightGray;
+        
 
         &_title {
             font-size: 30px;

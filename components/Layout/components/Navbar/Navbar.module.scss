@@ -15,28 +15,34 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+
     ul {
       display: flex;
       align-items: center;
       gap: 1rem;
+
       li {
         display: flex;
         gap: 0.5rem;
         font-weight: bold;
         border: 1.5px solid $White;
         border-radius: 0.7rem;
+
         &:hover {
           font-weight: bolder;
         }
+
         &:last-child {
           border: 1.5px solid transparent;
         }
+
         a {
           text-transform: uppercase;
           padding: 0.4rem 0.7rem;
           color: $PrimaryBlue;
           font-weight: 700;
           transition: 0.2s;
+
           &:hover {
             border-radius: 0.7rem;
             background: $PrimaryBlue;
@@ -47,13 +53,19 @@
 
       .icons {
         width: 1.5rem;
+
         &__login {
           width: auto;
+
           &:hover {
             background-color: transparent;
           }
         }
       }
+    }
+
+    .extraLink {
+      display: none;
     }
 
     .cover {
@@ -108,8 +120,17 @@
         display: block;
       }
 
-      #menu:checked ~ ul {
+      #menu:checked~ul {
         left: 0;
+      }
+
+      .dropdownLink {
+        display: none;
+      }
+
+      .extraLink {
+        display: grid;
+        grid-template-columns: auto;
       }
     }
   }

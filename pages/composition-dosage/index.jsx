@@ -22,7 +22,7 @@ const About = () => {
             </Head>
 
             <div className={classes.section1} style={{ paddingTop: "100px" }}>
-                <Image src={Composition} height={450} width={1450} alt="logo" />
+                <div className={classes.section1_imgComposition}/>
                 <h1 className={classes.section1_title}>{t("Composition & Dosage")}</h1>
                 <button className={classes.section1_button}>{t("BIZ BILAN BOG'LANISH")}</button>
             </div>
