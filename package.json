@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "i18n": "i18next-scanner"
+    "i18n": "i18next-scanner",
+    "export":"next export"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
